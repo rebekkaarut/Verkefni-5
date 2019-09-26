@@ -19,3 +19,27 @@ main {
   max-width: 1500px;
   padding: 20px;
 }
+
+h2{
+  font-size: 24px;
+  line-height: 24px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.cards {
+  justify-content: space-around;
+}
+
+.card {
+  background: #fff;
+  border: 2px;
+  border-radius: 5px;
+  border-color: #aaa;
+  height: 320px;
+  width: 470px;
+  margin-bottom: 10px;
+}
