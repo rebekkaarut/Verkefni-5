@@ -9,7 +9,6 @@
 
 html {
   box-sizing: border-box;
-
   font-family: 'Open Sans', helvetica, arial, sans-serif;
   font-size: 16px;
 }
@@ -20,26 +19,55 @@ main {
   padding: 20px;
 }
 
-h2{
+.card_heading{
   font-size: 24px;
   line-height: 24px;
+  word-break: break-word;
 }
 
-p {
+.card_main_text{
   font-size: 16px;
   line-height: 20px;
+  word-break: break-word;
+  display: flex;
+  margin: auto;
+  flex: 1;
 }
 
 .cards {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .card {
-  background: #fff;
-  border: 2px;
+  background-color: #fff;
+  border: 2px solid;
   border-radius: 5px;
   border-color: #aaa;
-  height: 320px;
-  width: 470px;
+  max-height: 320px;
+  max-width: 470px;
   margin-bottom: 10px;
+
+  display: flex;
+  flex-direction: column;
+  overflow-wrap: break-word;
+  overflow: auto;
+}
+
+.card_image {
+
+}
+
+.card_points {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.card_point {
+    margin-right: 1rem;
+    font-weight: bold;
 }
