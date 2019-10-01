@@ -1,62 +1,68 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 html {
-  box-sizing: border-box;
-  font-family: 'Open Sans', helvetica, arial, sans-serif;
-  font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', helvetica, arial, sans-serif;
+    font-size: 16px;
 }
 
 main {
-  margin: 0 auto;
-  max-width: 1500px;
-  padding: 20px;
+    margin: 0 auto;
+    max-width: 1500px;
+    padding: 20px;
 }
 
 .card_heading{
-  font-size: 24px;
-  line-height: 24px;
-  word-break: break-word;
+    font-size: 24px;
+    line-height: 24px;
+    word-break: break-word;
+    padding: 7px;
+    text-indent: 1%;
 }
 
 .card_main_text{
-  font-size: 16px;
-  line-height: 20px;
-  word-break: break-word;
-  display: flex;
-  margin: auto;
-  flex: 1;
+    font-size: 16px;
+    line-height: 20px;
+    word-break: break-word;
+    display: flex;
+    margin: auto;
+    flex: 1;
+    padding: 10px;
 }
 
 .cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .card {
-  background-color: #fff;
-  border: 2px solid;
-  border-radius: 5px;
-  border-color: #aaa;
-  max-height: 320px;
-  max-width: 470px;
-  margin-bottom: 10px;
+    background-color: #fff;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: #aaa;
+    max-height: 320px;
+    max-width: 470px;
+    /*min-height: 320px;*/
+    margin-bottom: 10px;
 
-  display: flex;
-  flex-direction: column;
-  overflow-wrap: break-word;
-  overflow: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: break-word;
+    overflow: auto;
 }
 
 .card_image {
-
+    width: 150px;
+    height: 100px;
+    padding: 8px 15px 8px 8px;
 }
 
 .card_points {
@@ -70,4 +76,11 @@ main {
 .card_point {
     margin-right: 1rem;
     font-weight: bold;
+}
+.card-text {
+    padding: 10px;
+}
+
+.card:nth-last-child(1) {
+    order: -1;
 }
